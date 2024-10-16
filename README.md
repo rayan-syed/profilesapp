@@ -1,8 +1,21 @@
-# React + Vite
+# ProfilesApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ProfilesApp is a serverless web application that demonstrates a modern cloud-based architecture using AWS services. This project follows the [AWS Hands-On Tutorial](https://aws.amazon.com/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/) and showcases how to build scalable and resilient web applications.
 
-Currently, two official plugins are available:
+## Features
+- **Frontend:** Hosted on **Amazon S3** as a static website.
+- **API Management:** **Amazon API Gateway** to expose endpoints.
+- **Backend Logic:** **AWS Lambda** functions to handle business logic.
+- **Database:** **Amazon DynamoDB** for fast, flexible NoSQL storage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## AWS Services Used
+- **S3** - Static website hosting
+- **API Gateway** - RESTful API Management
+- **Lambda** - Serverless computer service
+- **DynamoDB** NoSQL database service
+
+## How It Works
+1. Users interact with a web interface hosted on S3.
+2. API Gateway routes API calls to Lambda functions.
+3. Lambda functions perform CRUD operations on DynamoDB.
+4. The web interface displays updated profile data dynamically.
